@@ -1,0 +1,178 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #0affff
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    color: #a5dce4;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #31a8ba;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+ 
+
+header nav ul li a:hover {
+    color:#0affff 
+}
+
+
+section {
+    padding: 2rem 0;
+}
+
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#projects h2 {
+    color:#011414;
+}
+
+.project p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project {
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+
+.project a {
+    color: rgb(14, 1, 1);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+     font-size: 1.5rem;
+}
+
+#contact a {
+    color: #322c2c;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background: rgba(51, 51, 51, 0.8); 
+    color: #a7dbdc;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+}
+
+
+
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+    }
+
+    .project {
+        max-width: 100%;
+    }
+    
+    header nav ul li a:hover {
+    color:#0affff 
+}
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+     }
+    .projects-grid {
+        justify-content: space-evenly; 
+    }
+}
